@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Page Title</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1 id="title">Registration form</h1>
+    <p id="description">Welcome to my first registration form</p>
+    <form action="post" id="survey-form">
+
+        <label for="name" id="name-label">
+            Name
+            <input type="text" id="name" placeholder="Giorgio" required>
+        </label>
+
+        <label for="email" id="email-label">
+            email
+            <input type="email" id="email" placeholder="orabora@yaha.com" required>
+        </label>
+
+        <label for="number" id="number-label">
+            Age
+            <input type="number" id="number" min="13" max="120" placeholder="26">
+        </label>
+
+        <select name="dropdown" id="dropdown">
+            <option value="">select one</option>
+            <option value="1">I am an engineer</option>
+            <option value="2">I am a data scientist</option>
+        </select>
+
+        <label for="personal-account">
+            personal account
+            <input id="personal-account" type="radio" name="account-type" checked>
+        </label>
+        <label for="business-account">
+            business account
+            <input id="business-account" type="radio" name="account-type">
+        </label>
+
+        <label for="terms-conditions">
+            do you agree?
+            <input type="checkbox" name="terms-conditions" id="terms-conditions">
+        </label>
+
+        <label for="terms-conditions-two">
+            are you sure?
+            <input type="checkbox" name="terms-conditions-two" id="terms-conditions-two">
+        </label>
+
+        <label for="bio">
+            <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+        </label>
+
+        <input type="submit" name="somename" id="submit" value="submit">
+
+    </form>
+
+</body>
+</html>
